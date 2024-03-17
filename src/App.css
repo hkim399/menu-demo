@@ -1,38 +1,211 @@
-.App {
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  /* padding: 10px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding-left: 1%;
+  color: #333;
+}
+
+.search-category-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search-container {
+  margin-right: 10px;
+}
+.search-container input {
+  font-size: 18px;
+  width: 180px;
+}
+
+.filter-group.category {
+  order: 1;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group p {
+  font-weight: bold;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  padding-top: 30px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container.horizontal {
+  flex-direction: row;
+  margin-right: 40px;
+}
+
+.button-container.vertical {
+  flex-direction: column;
+}
+
+.products {
+  margin-left: 220px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 0 2.5%;
+  margin-bottom: 40px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product h2 {
+  margin-top: 0;
+}
+
+.product p {
+  margin-bottom: 8px;
+}
+
+.product p:last-child {
+  margin-bottom: 0;
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .header h1 {
+    padding: 10px;
+  }
+
+  .search-category-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    margin: 0;
+  }
+
+  .filter-group.category {
+    order: 2;
+  }
+
+  .products {
+    margin-top: 170px;
+    margin-left: 200px;
+  }
+
+  .sidebar {
+    padding-top: 100px;
+    width: 180px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay img {
+  max-width: 50%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlay-content h2 {
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.overlay-content p {
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }

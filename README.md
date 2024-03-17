@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Demo Restaurant Menu App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The goal of this project is to enhance the customer experience when ordering food at a restaurant. 
+This is achieved through a simple web application built with React.js, enabling users to browse a restaurant menu. 
+Additionally, users can filter and narrow down items based on various criteria, enhancing their ability to find the dishes they desire.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of menu items with details such as name, description, price, and category.
+- Filter menu items by category, food type, price, and sale status.
+- Search for menu items by name.
+- Click on an item to see more details in an overlay.
+- Responsive design for different screen sizes.
 
-### `npm start`
+## How to Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Visit the live demo (https://hkim399.github.io/menu-demo/).
+2. Explore the menu items displayed on the page.
+3. Use the filter buttons to refine the displayed menu items based on your preferences. Every filter section will narrow down your choices.
+4. Enter a search term in the search bar to find specific menu items by name.
+5. Click on a menu item to view additional details in an overlay.
+6. Enjoy exploring the restaurant menu!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js
+- HTML/CSS
+- JavaScript
 
-### `npm run build`
+## Database Used
+-  A static dataset comprises a manually created array of JavaScript objects.
+- The images are free stock photos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Inspiration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The inspiration for this web app originated from my time working as a server in a restaurant. Seeing firsthand the various customer preferences, allergies, and budget limitations, I envisioned a solution to simplify their search process.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Goal
 
-### `npm run eject`
+There are multiple steps to my goal, and here's what I want to achieve:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. The first goal is to transform this into a full-stack application where restaurant owners can sign into their accounts and edit/add menu items.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Develop a more user-friendly and intuitive interface that enables customers to navigate easily through the menu.
+- Design a visually appealing website using CSS frameworks like Bootstrap or Material UI.
+- Implement responsive design to ensure the website is accessible from any device with internet access (while acknowledging it is already responsive, improvements can be made).
+- Deploy the application on platform like Vercel for universal accessibility.
+- Implement user authentication, either through email sign up/log in via Firebase Auth, Google OAuth, or Amazon Web Services.
+- Enable the addition of new menu items or modifications to existing ones through a backend system (e.g., Node.js + Express) and develop an additional site for owners to log in and manage the menu by adding, removing, or editing items.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. The second goal is to incorporate a cart system that facilitates ordering and payment, akin to other restaurants.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Integrate a payment system to allow customers to place online orders without needing to physically visit the restaurant.
+- Implement a secure payment system, possibly using Stripe, to enable safe transactions.
+- Establish an email system for sending confirmation emails after orders are placed, including the estimated time of pick-up.
+- Create user accounts for customers to save their previously ordered dishes.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
